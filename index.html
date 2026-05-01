@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel | Your Local Energy Analyst</title>
+    
+    <meta name="description" content="Stop paying the default energy rate. Find the absolute lowest rate for your business in under 3 minutes. No cold calls, just good customer service.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        
+        :root {
+            --navy: #0f172a;
+            --action: #2563eb;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: radial-gradient(circle, #e2e8f0 1.5px, transparent 1.5px);
+        }
+
+        .text-balanced { text-wrap: balance; }
+        
+        .logo-compact {
+            letter-spacing: -0.06em;
+        }
+
+        .step-card {
+            transition: transform 0.2s ease;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        action: '#2563eb',
+                        actionHover: '#1d4ed8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-navy antialiased">
+
+    <!-- Nav -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="flex items-center text-2xl font-black italic uppercase text-navy logo-compact shrink-0">
+                    <span>GABRI</span>
+                    <div class="inline-flex items-center justify-center -mx-1 translate-y-[-1px] translate-x-[10%]">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-action">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <span>L</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-slate-300 font-light text-2xl mx-1 pb-1">|</span>
+                    <span class="text-[10px] text-slate-500 tracking-tighter uppercase font-bold pt-1 whitespace-nowrap">Your Local Energy Analyst</span>
+                </div>
+            </div>
+            
+            <a href="sms:2144905906&body=Hey%20Gabriel,%20review%20my%20bill,%20and%20send%20me%20the%20rate%20analysis." 
+               class="hidden sm:inline-flex items-center gap-2 bg-action text-white px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-tighter italic shadow-lg shadow-action/20 active:scale-95 transition-transform">
+                <i data-lucide="check-circle" class="w-3 h-3"></i>
+                <span>Check My Rate</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero: Optimized for StoryBrand (Problem -> Solution) -->
+    <section class="relative pt-16 pb-12 px-6 bg-grid">
+        <div class="max-w-2xl mx-auto text-center relative z-10">
+            <div class="inline-block bg-slate-100 px-4 py-1.5 rounded-full mb-6 border border-slate-200">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500 italic">Serving Trophy Club • Roanoke • Southlake • Alliance</p>
+            </div>
+            
+            <h1 class="text-5xl sm:text-7xl font-black text-navy leading-[0.85] tracking-tighter uppercase italic mb-8 text-balanced">
+                Stop paying <br> 
+                the <span class="text-action">default</span> rate.
+            </h1>
+            
+            <p class="text-xl sm:text-2xl text-slate-600 mb-10 font-medium leading-tight text-balanced max-w-lg mx-auto italic">
+                Get the market's lowest rate in under 3 minutes with a simple text message.
+            </p>
+            
+            <a href="sms:2144905906&body=Hey%20Gabriel,%20review%20my%20bill,%20and%20send%20me%20the%20rate%20analysis." 
+               class="inline-flex w-full sm:w-auto bg-action text-white text-xl font-black py-6 px-10 rounded-2xl shadow-xl shadow-action/40 active:scale-95 transition-transform uppercase italic items-center justify-center gap-3">
+                <i data-lucide="check-circle" class="w-6 h-6"></i>
+                <span>Check My Rate</span>
+            </a>
+            
+            <p class="mt-8 text-slate-400 text-xs font-bold uppercase tracking-widest italic">No cold calls, just good customer service.</p>
+        </div>
+    </section>
+
+    <!-- The 3-Step Plan -->
+    <section class="py-16 px-6 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-xl mx-auto space-y-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-black uppercase italic tracking-tighter text-navy">The Path to Lower Bills</h2>
+                <p class="text-slate-500 font-bold uppercase text-[10px] tracking-widest mt-2 italic">3 easy steps</p>
+            </div>
+            
+            <div class="step-card bg-white p-8 rounded-[2.5rem] border border-slate-200 shadow-sm flex items-center gap-6">
+                <div class="bg-navy text-white text-xl font-black w-14 h-14 flex items-center justify-center rounded-2xl italic shrink-0">1</div>
+                <div>
+                    <h3 class="text-xl font-black uppercase italic mb-1">Snap your bill</h3>
+                    <p class="text-slate-500 text-sm font-medium">Take a photo of your current statement.</p>
+                </div>
+            </div>
+
+            <div class="step-card bg-white p-8 rounded-[2.5rem] border border-slate-200 shadow-sm flex items-center gap-6">
+                <div class="bg-navy text-white text-xl font-black w-14 h-14 flex items-center justify-center rounded-2xl italic shrink-0">2</div>
+                <div>
+                    <h3 class="text-xl font-black uppercase italic mb-1">Text it to me</h3>
+                    <p class="text-slate-500 text-sm font-medium italic">Send the photo to (214) 490-5906.</p>
+                </div>
+            </div>
+
+            <div class="step-card bg-white p-8 rounded-[2.5rem] border border-slate-200 shadow-sm flex items-center gap-6">
+                <div class="bg-action text-white text-xl font-black w-14 h-14 flex items-center justify-center rounded-2xl italic shrink-0">3</div>
+                <div>
+                    <h3 class="text-xl font-black uppercase italic mb-1">Get your result</h3>
+                    <p class="text-slate-500 text-sm font-medium">I'll find your lowest rate or confirm your current deal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Gabriel (The Guide) -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-xl mx-auto space-y-10 text-center">
+            <h2 class="text-4xl font-black text-navy uppercase italic tracking-tighter leading-none">
+                Meet Gabriel.
+            </h2>
+            
+            <div class="rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5] flex items-center justify-center">
+                <img src="https://lh3.googleusercontent.com/d/1irvIX1E4MTqseyc5WuXoX2Q9Zk9MPoBe" alt="Gabriel and family" class="w-full h-full object-contain">
+            </div>
+
+            <div class="space-y-6 text-slate-600 text-lg font-medium leading-relaxed">
+                <p>I live in Trophy Club with my family, and coach youth sports. I became an analyst because business owners are too busy to find every price in the market.</p>
+                <p class="text-navy font-bold italic">"I scan 90+ suppliers in seconds to find the truth for your business. If your current rate is already the best, I'll be the first to tell you."</p>
+                <p>No sales pitches, no cold calls. Just a neighborly look at the data so you can stop overpaying and get back to work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Success CTA -->
+    <section class="bg-navy py-20 px-6 text-center text-white relative overflow-hidden">
+        <div class="max-w-xl mx-auto relative z-10">
+            <h2 class="text-5xl font-black mb-8 tracking-tighter uppercase italic leading-none text-balance">
+                Find your <br>lowest rate.
+            </h2>
+            <p class="text-lg text-slate-400 mb-10 font-medium">Finding out takes 3 minutes. Start knowing your rate is fair.</p>
+            <a href="sms:2144905906&body=Hey%20Gabriel,%20review%20my%20bill,%20and%20send%20me%20the%20rate%20analysis." 
+               class="inline-flex w-full bg-action text-white text-xl font-black py-6 rounded-2xl shadow-2xl shadow-action/40 items-center justify-center gap-3 uppercase italic transition-all active:scale-95">
+                <i data-lucide="check-circle" class="w-6 h-6"></i>
+                <span>Check My Rate</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 px-6 text-center border-t border-slate-100">
+        <div class="flex items-center justify-center text-2xl font-black text-navy italic uppercase logo-compact mb-4">
+            <span>GABRI</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-action -mx-0.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+            <span>L</span>
+        </div>
+        <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Gabriel | Your Local Energy Analyst</p>
+        <p class="text-[9px] mt-2 text-slate-300 italic">Trophy Club • Roanoke • Argyle • Justin • Southlake • Keller • Haslet</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
